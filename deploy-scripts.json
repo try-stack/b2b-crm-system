@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "next build --turbopack",
+    "deploy:local": "cd out && npx serve . --single",
+    "deploy:zip": "powershell Compress-Archive -Path out/* -DestinationPath deployment-package.zip -Force"
+  }
+}
